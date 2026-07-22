@@ -106,6 +106,25 @@ K --> L[Credit Risk Report]
 
 The project follows an end-to-end Machine Learning workflow, starting from raw customer information and ending with an automated credit risk assessment report. Each stage was designed to simulate the lifecycle of a real-world credit risk modeling project used in financial institutions.
 
+## Machine Learning Pipeline
+
+```mermaid
+flowchart TD
+
+A[New Applicant] --> B[Input Validation]
+
+B --> C["Data Preprocessing (StandardScaler + OneHotEncoder)"]
+
+C --> D["Logistic Regression (Classifier)"]
+
+D --> E[Probability of Default]
+
+E --> F[Threshold Decision]
+
+F --> G[Risk Classification]
+
+G --> H[Automatic Credit Risk Report]
+```
 
 ## Exploratory Data Analysis
 
