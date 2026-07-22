@@ -106,6 +106,7 @@ K --> L[Credit Risk Report]
 
 The project follows an end-to-end Machine Learning workflow, starting from raw customer information and ending with an automated credit risk assessment report. Each stage was designed to simulate the lifecycle of a real-world credit risk modeling project used in financial institutions.
 
+
 ## Exploratory Data Analysis
 
 The exploratory analysis focused on understanding the characteristics of loan applicants and identifying variables associated with loan default.
@@ -123,4 +124,38 @@ Some of the most relevant findings include:
 * Employment status and education level also influenced repayment behavior.
 
 These findings guided both feature selection and the interpretation of the final predictive model.
+
+## Data Preparation
+
+Before training the Machine Learning models, the dataset was prepared through a structured preprocessing pipeline.
+
+The preprocessing stage included:
+
+* Selection of relevant numerical, categorical and binary variables.
+* Standardization of numerical features using **StandardScaler**.
+* One-Hot Encoding of categorical variables.
+* Preservation of binary variables without additional scaling.
+* Construction of a reusable **ColumnTransformer**.
+* Integration of preprocessing and classification into a single Scikit-learn Pipeline.
+
+This approach guarantees that both training data and future applicants are processed consistently, reducing the risk of data leakage and ensuring reproducible predictions.
+
+## Machine Learning Models
+
+Several supervised Machine Learning algorithms were evaluated throughout the project to identify the most appropriate solution for credit risk prediction.
+
+The following models were implemented and compared:
+
+| Model                          | Purpose                                      |
+| ------------------------------ | -------------------------------------------- |
+| Logistic Regression            | Baseline interpretable linear classifier     |
+| Logistic Regression (Balanced) | Baseline model with class imbalance handling |
+| K-Nearest Neighbors (KNN)      | Distance-based nonlinear classifier          |
+| Decision Tree                  | Rule-based interpretable model               |
+| Random Forest                  | Ensemble learning approach                   |
+| Random Forest (Balanced)       | Ensemble model with class weighting          |
+
+Rather than selecting a model based solely on prediction accuracy, each algorithm was evaluated according to its ability to identify high-risk borrowers while maintaining an acceptable trade-off between false positives and false negatives.
+
+The analysis gave the complete picture of each modeling approach's advantages and disadvantages.
 
