@@ -159,3 +159,58 @@ Rather than selecting a model based solely on prediction accuracy, each algorith
 
 The analysis gave the complete picture of each modeling approach's advantages and disadvantages.
 
+## Model Evaluation
+
+Because the dataset is highly imbalanced, overall Accuracy was not considered an appropriate metric for model selection.
+
+The business objective is to identify customers with a high probability of default before loan approval. Consequently, the evaluation focused primarily on:
+
+* **Recall**, to maximize the detection of high-risk applicants.
+* **Precision**, to reduce unnecessary rejection of reliable customers.
+* **F1-Score**, to balance Precision and Recall.
+* **ROC-AUC**, to evaluate the model's ranking capability independently of the classification threshold.
+
+Although the baseline Logistic Regression achieved an Accuracy close to 89%, its Recall was extremely low because it predicted almost every applicant as a reliable borrower.
+
+After incorporating class balancing, the Logistic Regression model substantially improved its ability to identify default cases while maintaining a strong ROC-AUC performance.
+
+For this reason, the balanced Logistic Regression model was selected as the final production model.
+
+## Threshold Optimization
+
+Most Machine Learning classifiers use a default decision threshold of **0.50**.
+
+However, in real-world credit risk applications, this threshold is rarely optimal because the cost of approving a customer who later defaults is significantly higher than the cost of requesting additional review for a low-risk applicant.
+
+For this reason, multiple classification thresholds were evaluated.
+
+The analysis demonstrated how Precision and Recall change as the threshold varies:
+
+* Lower thresholds maximize Recall, identifying a larger proportion of risky customers.
+* Higher thresholds increase Precision but may overlook many default cases.
+
+This analysis allows financial institutions to select a decision threshold that best matches their risk tolerance and lending strategy.
+
+## Model Explainability
+
+Interpretability is essential in financial applications because lending decisions must be transparent and justifiable.
+
+After selecting the final Logistic Regression model, the model coefficients were analyzed to identify the variables that most strongly influence the probability of default.
+
+Some of the strongest risk-increasing factors include:
+
+* Higher interest rates
+* Larger loan amounts
+* Unemployment
+* High School education level
+* Greater number of credit lines
+
+Conversely, the strongest risk-reducing factors include:
+
+* Older age
+* Longer employment history
+* Higher annual income
+* Presence of a co-signer
+* Full-time employment
+
+These findings are consistent with financial intuition and provide valuable insights for credit analysts beyond the predictive capability of the model itself.
