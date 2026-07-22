@@ -76,3 +76,51 @@ The target variable indicates whether the customer ultimately defaulted on the l
 * **0** → Loan Paid
 * **1** → Loan Default
 
+## Project Workflow
+
+```mermaid
+flowchart TD
+
+A[Raw Loan Dataset] --> B[Exploratory Data Analysis]
+
+B --> C[Data Cleaning]
+
+C --> D[Feature Engineering]
+
+D --> E[Data Preprocessing]
+
+E --> F[Train/Test Split]
+
+F --> G[Model Training]
+
+G --> H[Model Comparison]
+
+H --> I[Threshold Optimization]
+
+I --> J[Model Explainability]
+
+J --> K[Inference Pipeline]
+
+K --> L[Credit Risk Report]
+```
+
+The project follows an end-to-end Machine Learning workflow, starting from raw customer information and ending with an automated credit risk assessment report. Each stage was designed to simulate the lifecycle of a real-world credit risk modeling project used in financial institutions.
+
+## Exploratory Data Analysis
+
+The exploratory analysis focused on understanding the characteristics of loan applicants and identifying variables associated with loan default.
+
+Several numerical and categorical variables were analyzed using descriptive statistics, distribution plots, default rate analysis, correlation analysis and business-oriented visualizations.
+
+Some of the most relevant findings include:
+
+* Younger applicants showed a higher probability of default.
+* Lower income levels were associated with increased credit risk.
+* Higher loan amounts generally produced higher default rates.
+* Interest rate was one of the strongest positive risk indicators.
+* Longer employment history reduced default probability.
+* Customers with lower credit scores exhibited higher credit risk.
+* Employment status and education level also influenced repayment behavior.
+
+These findings guided both feature selection and the interpretation of the final predictive model.
+
