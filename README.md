@@ -168,7 +168,33 @@ The preprocessing stage included:
 * Construction of a reusable **ColumnTransformer**.
 * Integration of preprocessing and classification into a single Scikit-learn Pipeline.
 
-This approach guarantees that both training data and future applicants are processed consistently, reducing the risk of data leakage and ensuring reproducible predictions.
+This approach guarantees that both training data and future applicants are processed consistently, reducing the risk of data leakage and ensuring reproducible predictions. This process is illustrated in **Diagram 3**.
+
+<p align="center">
+  <b>Diagram 3. Data Preparation</b>
+</p>
+
+```mermaid
+flowchart TD
+
+A[Raw Features] --> B[Numerical Variables]
+
+B --> C[StandardScaler]
+
+C --> D[Categorical Variables]
+
+D --> E[OneHotEncoder]
+
+E --> F[Binary Variables]
+
+F --> G[Passthrough]
+
+G --> H[ColumnTransformer]
+
+H --> I[Machine Learning Model]
+
+```
+
 
 ## Machine Learning Models
 
