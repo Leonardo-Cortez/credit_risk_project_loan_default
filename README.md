@@ -78,6 +78,12 @@ The target variable indicates whether the customer ultimately defaulted on the l
 
 ## Project Workflow
 
+The project follows an end-to-end Machine Learning workflow, starting from raw customer information and ending with an automated credit risk assessment report. Each stage was designed to simulate the lifecycle of a real-world credit risk modeling project used in financial institutions. This process is illustrated in **Diagram 1**.
+
+<p align="center">
+  <b>Diagram 1. Project Workflow</b>
+</p>
+
 ```mermaid
 flowchart TD
 
@@ -104,9 +110,14 @@ J --> K[Inference Pipeline]
 K --> L[Credit Risk Report]
 ```
 
-The project follows an end-to-end Machine Learning workflow, starting from raw customer information and ending with an automated credit risk assessment report. Each stage was designed to simulate the lifecycle of a real-world credit risk modeling project used in financial institutions.
 
 ## Machine Learning Pipeline
+
+To deploy the system to production, an automated *inference pipeline* was implemented. As illustrated in **Diagram 2** (an expansion of the inference phase in **Diagram 1**), the workflow validates the applicant's input data, applies the saved transformations, and calculates the risk for automated decision-making.
+
+<p align="center">
+  <b>Diagram 2. Machine Learning Pipeline</b>
+</p>
 
 ```mermaid
 flowchart TD
