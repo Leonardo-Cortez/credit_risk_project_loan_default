@@ -295,3 +295,32 @@ The inference workflow includes:
 6. Automatic generation of a credit risk assessment report.
 
 The system was designed to simulate how a financial institution could integrate the predictive model into its credit approval process, ensuring that every applicant is evaluated consistently using the same preprocessing steps applied during model training.
+
+## Project Structure
+
+```text
+Credit_Risk_Project/
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── notebooks/
+│   ├── 01_data_audit.ipynb
+│   ├── 02_EDA_and_Risk_analytics_utility_library.ipynb
+│   ├── 03_feature_engineering.ipynb
+│   ├── 04_predictive_modeling_and_model_benchmarking.ipynb
+│   ├── 05_model_optimization.ipynb
+│   ├── 06_model_interpretability.ipynb
+│   └── 07_new_borrower_prediction.ipynb
+│
+├── models/
+│   ├── credit_default_pipeline.pkl
+|   ├── logistic_balanced_model.pkl
+│   └── preprocessor.pkl
+│
+├── images/
+│
+├── README.md
+```
+
