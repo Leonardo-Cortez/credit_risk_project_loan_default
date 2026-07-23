@@ -324,3 +324,60 @@ Credit_Risk_Project/
 ├── README.md
 ```
 
+## Technologies
+
+| Category                | Technologies     |
+| ----------------------- | ---------------- |
+| Programming Language    | Python           |
+| Data Manipulation       | Pandas, NumPy    |
+| Visualization           | Matplotlib       |
+| Machine Learning        | Scikit-learn     |
+| Model Persistence       | Joblib           |
+| Development Environment | Google Colab     |
+| Dashboard *(Future)*    | Power BI         |
+| Version Control         | Git & GitHub     |
+
+## Key Results
+
+* Successfully developed an end-to-end Credit Risk Prediction Framework.
+* Compared multiple supervised Machine Learning algorithms.
+* Demonstrated that Accuracy alone is not an appropriate metric for imbalanced credit risk datasets.
+* Selected a balanced Logistic Regression model based on business-oriented evaluation metrics.
+* Performed decision threshold optimization to align model behavior with lending objectives.
+* Identified the most influential variables affecting loan default probability.
+* Built a reusable inference pipeline capable of evaluating new applicants automatically.
+* Established a complete workflow from raw data to business decision support.
+
+## Business Recommendations
+
+Based on the results obtained throughout this project, the following recommendations are proposed:
+
+* Incorporate the predictive model as a decision-support tool rather than a fully automated approval system.
+* Prioritize Recall when the business objective is minimizing financial losses caused by loan defaults.
+* Periodically retrain the model as customer behavior and economic conditions evolve.
+* Monitor prediction performance continuously to detect model drift.
+* Combine the predictive model with expert credit analyst review for high-risk applicants.
+* Use probability scores instead of binary predictions whenever possible, allowing different lending strategies depending on institutional risk tolerance.
+
+## Future Work
+
+Possible improvements for future versions of this project include:
+
+* Hyperparameter optimization using Grid Search or Random Search.
+* Evaluation of Gradient Boosting models such as XGBoost or LightGBM.
+* Probability calibration techniques.
+* Cost-sensitive learning approaches.
+* Explainability using SHAP values.
+* Integration with Power BI for business-oriented visualization.
+* Deployment as a web application or REST API.
+
+## Author
+
+**Leonardo Cortez Gómez**
+
+Computer Engineering Graduate with an interest in Data Science, Machine Learning and Business Analytics.
+
+This project was developed as part of a professional Machine Learning portfolio focused on solving real-world financial problems through data-driven decision making.
+
+Feel free to connect or explore the repository for additional details.
+
