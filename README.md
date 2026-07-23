@@ -278,3 +278,18 @@ These findings are consistent with financial intuition and provide valuable insi
     <b>Figure 2. Factors that increase and reduce Default risk.</b><br><br>
     <img src="Credit_Risk_Project/images/Factors_increase_decrease_default_risk.png" alt="Factors default risk" width="900">
 </p>
+
+## Inference Pipeline
+
+The final stage of the project consists of an inference pipeline capable of evaluating new loan applicants using the trained Machine Learning model.
+
+The inference workflow includes:
+
+1. Input validation.
+2. Business rule verification.
+3. Automatic preprocessing using the saved Scikit-learn Pipeline.
+4. Probability of Default estimation.
+5. Credit risk classification.
+6. Automatic generation of a credit risk assessment report.
+
+The system was designed to simulate how a financial institution could integrate the predictive model into its credit approval process, ensuring that every applicant is evaluated consistently using the same preprocessing steps applied during model training.
