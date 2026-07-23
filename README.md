@@ -124,17 +124,19 @@ flowchart TD
 
 A[New Applicant] --> B[Input Validation]
 
-B --> C["Data Preprocessing (StandardScaler + OneHotEncoder)"]
+B --> C[Business Rules Check]
 
-C --> D["Logistic Regression (Classifier)"]
+C --> D["Data Preprocessing (StandardScaler + OneHotEncoder)"]
 
-D --> E[Probability of Default]
+D --> E["Logistic Regression (Classifier)"]
 
-E --> F[Threshold Decision]
+E --> F[Probability of Default]
 
-F --> G[Risk Classification]
+F --> G[Threshold Decision]
 
-G --> H[Automatic Credit Risk Report]
+G --> H[Risk Classification]
+
+H --> I[Automatic Credit Risk Report]
 ```
 
 ## Exploratory Data Analysis
