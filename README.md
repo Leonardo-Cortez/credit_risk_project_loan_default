@@ -238,14 +238,17 @@ Most Machine Learning classifiers use a default decision threshold of **0.50**.
 
 However, in real-world credit risk applications, this threshold is rarely optimal because the cost of approving a customer who later defaults is significantly higher than the cost of requesting additional review for a low-risk applicant.
 
-For this reason, multiple classification thresholds were evaluated.
-
-The analysis demonstrated how Precision and Recall change as the threshold varies:
+For this reason, multiple classification thresholds were evaluated. As illustrated in **Figure 1**, the analysis demonstrated how Precision and Recall change as the threshold varies:
 
 * Lower thresholds maximize Recall, identifying a larger proportion of risky customers.
 * Higher thresholds increase Precision but may overlook many default cases.
 
 This analysis allows financial institutions to select a decision threshold that best matches their risk tolerance and lending strategy.
+
+<p align="center">
+    <b>Figure 1. Effect of decision Threshold.</b><br><br>
+    <img src="Credit_Risk_Project/images/Effect_of_decision_threshold.png" alt="Different Thresholds" width="700">
+</p>
 
 ## Model Explainability
 
