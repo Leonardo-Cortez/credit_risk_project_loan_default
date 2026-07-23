@@ -256,7 +256,7 @@ Interpretability is essential in financial applications because lending decision
 
 After selecting the final Logistic Regression model, the model coefficients were analyzed to identify the variables that most strongly influence the probability of default.
 
-Some of the strongest risk-increasing factors include:
+As illustrated in **Figure 2**, some of the strongest risk-increasing factors include:
 
 * Higher interest rates
 * Larger loan amounts
@@ -273,3 +273,8 @@ Conversely, the strongest risk-reducing factors include:
 * Full-time employment
 
 These findings are consistent with financial intuition and provide valuable insights for credit analysts beyond the predictive capability of the model itself.
+
+<p align="center">
+    <b>Figure 2. Factors that increase and reduce Default risk.</b><br><br>
+    <img src="Credit_Risk_Project/images/Factors_increase_decrease_default_risk.png" alt="Factors default risk" width="900">
+</p>
