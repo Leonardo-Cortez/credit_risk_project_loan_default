@@ -283,7 +283,7 @@ These findings are consistent with financial intuition and provide valuable insi
 
 ## Inference Pipeline
 
-The final stage of the project consists of an inference pipeline capable of evaluating new loan applicants using the trained Machine Learning model.
+As shown in **Diagram 2**, the final stage of the project consists of an inference pipeline capable of evaluating new loan applicants using the trained Machine Learning model.
 
 The inference workflow includes:
 
