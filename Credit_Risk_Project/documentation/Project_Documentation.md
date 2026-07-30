@@ -6,9 +6,13 @@
 
 - [1. Introduction](#1-introduction)
 - [2. Business Understanding](#2-business-understanding)
-  - [2.1 Business Problem](#21-business-context)
-  - [2.2 Project Objectives](#22-project-objectives)
-  - [2.3 Business Impact](#23-business-impact)
+  - [2.1 Business Context](#21-business-context)
+  - [2.2 Business Problem](#22-business-problem)
+  - [2.3 Why Machine Learning?](#23-why-machine-learning)
+  - [2.4 Business Objectives](#24-business-objectives)
+  - [2.5 Business Constraints](#25-business-constraints)
+  - [2.6 Success Criteria](#26-success-criteria)
+  - [2.7 Expected Deliverables](#27-expected-deliverables)
 
 - [3. Dataset Description](#3-dataset-description)
   - [3.1 Dataset Overview](#31-dataset-overview)
@@ -346,6 +350,10 @@ The expected deliverables of the project include:
 - Credit risk assessment report.
 - Power BI dashboard (future implementation).
 - Professional GitHub repository.
+
+<p align="right">
+<a href="#table-of-contents">Back to Table of Contents</a>
+</p>
 
 # 3. Dataset Description
 
