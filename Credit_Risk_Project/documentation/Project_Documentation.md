@@ -2,6 +2,61 @@
 
 ## Project Documentation
 
+# Table of Contents
+
+- [1. Introduction](#1-introduction)
+- [2. Business Understanding](#2-business-understanding)
+  - [2.1 Business Problem](#21-business-context)
+  - [2.2 Project Objectives](#22-project-objectives)
+  - [2.3 Business Impact](#23-business-impact)
+
+- [3. Dataset Description](#3-dataset-description)
+  - [3.1 Dataset Overview](#31-dataset-overview)
+  - [3.2 Features Description](#32-features-description)
+  - [3.3 Target Variable](#33-target-variable)
+
+- [4. Exploratory Data Analysis](#4-exploratory-data-analysis)
+  - [4.1 Dataset Exploration](#41-dataset-exploration)
+  - [4.2 Univariate Analysis](#42-univariate-analysis)
+  - [4.3 Bivariate Analysis](#43-bivariate-analysis)
+  - [4.4 Correlation Analysis](#44-correlation-analysis)
+  - [4.5 Business Insights](#45-business-insights)
+
+- [5. Data Preparation](#5-data-preparation)
+  - [5.1 Data Cleaning](#51-data-cleaning)
+  - [5.2 Feature Encoding](#52-feature-encoding)
+  - [5.3 Numerical Scaling](#53-numerical-scaling)
+  - [5.4 Feature Engineering](#54-feature-engineering)
+  - [5.5 Feature Transformation using ColumnTransformer](#55-feature-transformation-using-columntransformer)
+  - [5.6 Building the Machine Learning Pipeline](#56-building-the-machine-learning-pipeline)
+
+- [6. Machine Learning Model Development](#6-machine-learning-model-development)
+  - [6.1 Problem Definition](#61-problem-definition)
+  - [6.2 Train-Test Split](#62-train-test-split)
+  - [6.3 Logistic Regression](#63-logistic-regression)
+  - [6.4 Random Forest](#64-random-forest)
+  - [6.5 Model Evaluation](#65-model-evaluation)
+  - [6.6 ROC Curve Analysis](#66-roc-curve-analysis)
+  - [6.7 Precision-Recall Analysis](#67-precision-recall-analysis)
+  - [6.8 Threshold Optimization](#68-threshold-optimization)
+  - [6.9 Model Comparison](#69-model-comparison)
+
+- [7. Credit Risk Prediction Framework](#7-credit-risk-prediction-framework)
+  - [7.1 Framework Overview](#71-framework-overview)
+  - [7.2 Prediction Workflow](#72-prediction-workflow)
+  - [7.3 Credit Risk Report Generator](#73-credit-risk-report-generator)
+  - [7.4 Customer Risk Classification](#74-customer-risk-classification)
+  - [7.5 Example Prediction](#75-example-prediction)
+  - [7.6 Business Applications](#76-business-applications)
+  - [7.7 Limitations](#77-limitations)
+  - [7.8 Future Improvements](#78-future-improvements)
+
+- [8. Conclusions](#8-conclusions)
+  - [8.1 Project Summary](#81-project-summary)
+  - [8.2 Key Findings](#82-key-findings)
+  - [8.3 Business Impact](#83-business-impact)
+  - [8.4 Technical Contributions](#84-technical-contributions)
+  - [8.5 Final Remarks](#85-final-remarks)
 ---
 
 # Chapter 1 — Project Overview
