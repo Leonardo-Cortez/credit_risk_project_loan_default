@@ -16,8 +16,13 @@
 
 - [3. Dataset Description](#3-dataset-description)
   - [3.1 Dataset Overview](#31-dataset-overview)
-  - [3.2 Features Description](#32-features-description)
+  - [3.2 Dataset Dimensions](#32-dataset-dimensions)
   - [3.3 Target Variable](#33-target-variable)
+  - [3.4 Feature Description](#34-feature-description)
+  - [3.5 Variable Categories](#35-variable-categories)
+  - [3.6 Target Distribution](#36-target-distribution)
+  - [3.7 Initial Assumptions](#37-initial-assumptions)
+  - [3.8 Dataset Limitations](#38-dataset-limitations)
 
 - [4. Exploratory Data Analysis](#4-exploratory-data-analysis)
   - [4.1 Dataset Exploration](#41-dataset-exploration)
@@ -538,6 +543,10 @@ Therefore, the model should be interpreted as a decision-support system rather t
 - Variables were organized into business domains to improve interpretability.
 - Initial hypotheses guided the Exploratory Data Analysis.
 - Understanding the dataset structure was essential before model development.
+
+<p align="right">
+<a href="#table-of-contents">Back to Table of Contents</a>
+</p>
 
 # 4. Exploratory Data Analysis (EDA)
 
