@@ -82,7 +82,7 @@
   - [7.7 Limitations](#77-limitations)
   - [7.8 Future Improvements](#78-future-improvements)
 
-- [8. Conclusions](#8-conclusions)
+- [8. Conclusions](#chapter-8-conclusions)
   - [8.1 Project Summary](#81-project-summary)
   - [8.2 Key Findings](#82-key-findings)
   - [8.3 Business Impact](#83-business-impact)
@@ -5667,3 +5667,7 @@ Ultimately, the Credit Risk Prediction Framework illustrates how Data Science ca
 By combining reproducible analytical methods with interpretable Machine Learning and business-oriented reporting, the project provides a practical example of how predictive analytics can contribute to more informed, transparent, and consistent lending decisions.
 
 The knowledge, methodology, and architecture developed throughout this project establish a strong foundation for future work in predictive analytics and reinforce the role of Machine Learning as a powerful tool for supporting responsible, data-driven decision-making in the financial sector.
+
+<p align="right">
+<a href="#table-of-contents">Back to Table of Contents</a>
+</p>
