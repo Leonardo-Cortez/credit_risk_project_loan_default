@@ -4538,7 +4538,7 @@ Every subsequent stage is executed automatically.
 
 ### Report Contents
 
-As illustrated in **Figure X**, the Credit Risk Report includes several sections designed to support decision-making.
+As illustrated in **Figure 5**, the Credit Risk Report includes several sections designed to support decision-making.
 
 Typical report components include:
 
@@ -4550,7 +4550,10 @@ Typical report components include:
 Presenting all relevant information in a single report improves usability and facilitates communication between technical and non-technical stakeholders.
 
 
-**INSERT IMAGE OF CREDIT RISK REPORT**
+<p align="center">
+    <b>Figure 5. Credit Risk Report.</b><br><br>
+    <img src="../images/Credit_Risk_Report.PNG" alt="Credit Risk Report" width="700">
+</p>
 ---
 
 ### Business Interpretation
