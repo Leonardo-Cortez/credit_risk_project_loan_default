@@ -57,16 +57,20 @@
   - [5.6 Building the Machine Learning Pipeline](#56-building-the-machine-learning-pipeline)
   - [5.7 Train-Test Split](#57-train-test-split)
 
-- [6. Machine Learning Model Development](#6-machine-learning-model-development)
-  - [6.1 Problem Definition](#61-problem-definition)
-  - [6.2 Train-Test Split](#62-train-test-split)
+- [6. Model Development](#chapter-6-model-development)
+  - [6.1 Overview](#61-overview)
+  - [6.2 Baseline Model](#62-baseline-model)
   - [6.3 Logistic Regression](#63-logistic-regression)
-  - [6.4 Random Forest](#64-random-forest)
-  - [6.5 Model Evaluation](#65-model-evaluation)
-  - [6.6 ROC Curve Analysis](#66-roc-curve-analysis)
-  - [6.7 Precision-Recall Analysis](#67-precision-recall-analysis)
-  - [6.8 Threshold Optimization](#68-threshold-optimization)
+  - [6.4 Threshold Analysis](#64-threshold-analysis)
+  - [6.5 ROC Curve Analysis](#65-receiver-operating-characteristic-roc-curve)
+  - [6.6 Precision-Recall Curve and Average Precision](#66-precision-recall-curve-and-average-precision)
+  - [6.7 Model Interpretability](#67-model-interpretability)
+  - [6.8 Random Forest](#68-random-forest)
   - [6.9 Model Comparison](#69-model-comparison)
+  - [6.9.1 Performance Comparison](#691-performance-comparison)
+  - [6.9.2 Interpretability Comparison](#692-interpretability-comparison)
+  - [6.9.3 Business Comparison](#693-business-comparison)
+  - [6.9.4 Final Model Selection](#694-final-model-selection)
 
 - [7. Credit Risk Prediction Framework](#7-credit-risk-prediction-framework)
   - [7.1 Framework Overview](#71-framework-overview)
@@ -4225,6 +4229,10 @@ Rather than selecting the model with the highest Accuracy, this project prioriti
 As a result, Logistic Regression was selected as the final predictive model because it provides reliable probability estimates, meaningful business interpretation, and robust performance for credit risk prediction.
 
 This model became the foundation of the Credit Risk Prediction Framework presented throughout this project.
+
+<p align="right">
+<a href="#table-of-contents">Back to Table of Contents</a>
+</p>
 
 # Chapter 7. Credit Risk Prediction Framework
 
