@@ -48,13 +48,14 @@
   - [4.9.5 Binary Variables](#495-binary-variables)
   - [4.10 Overall Findings from the EDA](#410-overall-findings-from-the-exploratory-data-analysis)
 
-- [5. Data Preparation](#5-data-preparation)
-  - [5.1 Data Cleaning](#51-data-cleaning)
-  - [5.2 Feature Encoding](#52-feature-encoding)
-  - [5.3 Numerical Scaling](#53-numerical-scaling)
-  - [5.4 Feature Engineering](#54-feature-engineering)
-  - [5.5 Feature Transformation using ColumnTransformer](#55-feature-transformation-using-columntransformer)
+- [5. Data Preparation](#chapter-5-data-preparation)
+  - [5.1 Overview](#51-overview)
+  - [5.2 Feature Selection](#52-feature-selection)
+  - [5.3 Feature Categorization](#53-feature-categorization)
+  - [5.4 Data Cleaning](#54-data-cleaning)
+  - [5.5 Feature Transformation](#55-feature-transformation-using-columntransformer)
   - [5.6 Building the Machine Learning Pipeline](#56-building-the-machine-learning-pipeline)
+  - [5.7 Train-Test Split](#57-train-test-split)
 
 - [6. Machine Learning Model Development](#6-machine-learning-model-development)
   - [6.1 Problem Definition](#61-problem-definition)
@@ -3011,6 +3012,10 @@ The Train-Test Split established a rigorous evaluation framework for the project
 By separating historical observations into independent training and testing datasets, the project ensured that model performance reflects true predictive capability rather than memorization.
 
 Combined with the Machine Learning Pipeline, this strategy provides a robust, reproducible, and unbiased foundation for model development and evaluation.
+
+<p align="right">
+<a href="#table-of-contents">Back to Table of Contents</a>
+</p>
 
 # Chapter 6. Model Development
 
