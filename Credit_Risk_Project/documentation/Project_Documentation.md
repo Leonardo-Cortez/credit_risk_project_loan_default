@@ -4746,7 +4746,7 @@ This approach improves usability while preserving the predictive information gen
 
 ## 7.5 Example Prediction
 
-To demonstrate the practical application of the Credit Risk Prediction Framework, a sample applicant was evaluated using the complete prediction workflow as shown in **Figure X**.
+To demonstrate the practical application of the Credit Risk Prediction Framework, a sample applicant was evaluated using the complete prediction workflow as shown in **Figure 6**.
 
 This example illustrates how customer information is transformed into a business-oriented credit risk assessment.
 
@@ -4793,7 +4793,10 @@ After validating the applicant's information, the framework automatically execut
 
 The user was not required to manually preprocess data or interpret model outputs.
 
-**INSERT FIGURE OF PREDICTION RESULT**
+<p align="center">
+    <b>Figure 6. Credit Risk Report Example.</b><br><br>
+    <img src="../images/Credit_Risk_Report_Example.PNG" alt="Credit Risk Report" width="700">
+</p>
 
 ---
 
