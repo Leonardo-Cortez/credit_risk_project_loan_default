@@ -3149,6 +3149,23 @@ Unlike regression algorithms that predict continuous numerical values, as shown 
 
 In this project, the model estimates the probability that a loan applicant will default.
 
+<p align="center">
+  <b>Diagram 4. Internal Flow of Logistic Regression</b>
+</p>
+
+```mermaid
+flowchart TD
+
+A[Applicant Features] --> B["Linear Combination 
+(β₀ + β₁x₁ + β₂x₂ + ... + βₙxₙ)"]
+
+B --> C[Sigmoid Function]
+C --> D[Probability of Default]
+
+D --> E[Classification Threshold]
+E --> F[Default / Non-default]
+
+```
 ---
 
 ### Binary Classification
@@ -3290,24 +3307,6 @@ Logistic Regression established a strong and interpretable baseline for the Cred
 Its ability to estimate probabilities rather than simple class labels enabled a richer evaluation strategy based on Precision, Recall, ROC-AUC, Precision-Recall analysis, and threshold optimization.
 
 These probability estimates became the foundation for every subsequent evaluation performed throughout the project.
-
-<p align="center">
-  <b>Diagram 4. Internal Flow of Logistic Regression</b>
-</p>
-
-```mermaid
-flowchart TD
-
-A[Applicant Features] --> B["Linear Combination 
-(β₀ + β₁x₁ + β₂x₂ + ... + βₙxₙ)"]
-
-B --> C[Sigmoid Function]
-C --> D[Probability of Default]
-
-D --> E[Classification Threshold]
-E --> F[Default / Non-default]
-
-```
 
 ## 6.4 Threshold Analysis
 
