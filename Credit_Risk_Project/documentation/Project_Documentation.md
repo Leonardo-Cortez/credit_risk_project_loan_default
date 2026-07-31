@@ -2520,6 +2520,34 @@ The `ColumnTransformer` solves this problem by allowing different preprocessing 
 
 This design produces a clean, reproducible, and scalable preprocessing workflow.
 
+<p align="center">
+  <b>Diagram 1. Feature Transformation</b>
+</p>
+
+```mermaid
+flowchart TD
+
+A[Raw Dataset] --> B[Feature Selection]
+
+B --> C[ColumnTransformer]
+
+C --> D[Numerical Features]
+C --> E[Categorical Features]
+C --> F[Binary Features]
+
+D --> G[StandardScaler]
+E --> H[OneHotEncoder<br/>handle_unknown='ignore']
+F --> I[Keep as 0/1]
+
+G --> J[Processed Features]
+H --> J
+I --> J
+
+J --> K[Machine Learning Models]
+
+K --> L[Logistic Regression]
+K --> M[Random Forest]
+```
 ---
 
 ### Numerical Features
@@ -2696,34 +2724,6 @@ Finally, future observations—including completely new applicants—receive exa
 
 This consistency reduces implementation errors and improves model reliability during deployment.
 
-<p align="center">
-  <b>Diagram 1. Feature Transformation</b>
-</p>
-
-```mermaid
-flowchart TD
-
-A[Raw Dataset] --> B[Feature Selection]
-
-B --> C[ColumnTransformer]
-
-C --> D[Numerical Features]
-C --> E[Categorical Features]
-C --> F[Binary Features]
-
-D --> G[StandardScaler]
-E --> H[OneHotEncoder<br/>handle_unknown='ignore']
-F --> I[Keep as 0/1]
-
-G --> J[Processed Features]
-H --> J
-I --> J
-
-J --> K[Machine Learning Models]
-
-K --> L[Logistic Regression]
-K --> M[Random Forest]
-```
 
 ## 5.6 Building the Machine Learning Pipeline
 
