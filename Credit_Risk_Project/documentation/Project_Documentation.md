@@ -4114,7 +4114,7 @@ The comparison considered multiple evaluation metrics, including:
 - F1 Score
 - ROC-AUC
 
-Table X summarizes the predictive performance obtained by both models.
+The table below summarizes the predictive performance obtained by both models.
 
 | Metric | Logistic Regression | Random Forest |
 |---------|-------------------:|--------------:|
@@ -4269,6 +4269,27 @@ The framework combines data preprocessing, predictive modeling, probability esti
 
 Rather than requiring users to manually preprocess data or interpret raw model outputs, the framework automates every stage of the prediction process.
 
+<p align="center">
+  <b>Diagram 6. Project Workflow</b>
+</p>
+
+```mermaid
+flowchart TD
+
+A[Loan Applicant] --> B[Customer Information]
+
+B --> C["Feature Preprocessing Pipeline
+         (Scaling + Encoding + Validation)"]
+C --> D[Logistic Regression Model]
+
+D --> E["Probability of Default (PD)"]
+E --> F["Risk Classification Engine
+       (Low / Medium / High Risk)"]
+
+F --> G[Automated Credit Risk Report]
+G --> H[Decision Support for Analysts]
+
+```
 ---
 
 ### Framework Components
@@ -4331,28 +4352,6 @@ This approach bridges the gap between predictive analytics and business applicat
 The Credit Risk Prediction Framework represents the practical implementation of all previous stages of the project.
 
 The following sections describe how applicant information flows through the framework, how predictions are generated, and how the resulting credit risk assessment can support lending decisions.
-
-<p align="center">
-  <b>Diagram 6. Project Workflow</b>
-</p>
-
-```mermaid
-flowchart TD
-
-A[Loan Applicant] --> B[Customer Information]
-
-B --> C["Feature Preprocessing Pipeline
-         (Scaling + Encoding + Validation)"]
-C --> D[Logistic Regression Model]
-
-D --> E["Probability of Default (PD)"]
-E --> F["Risk Classification Engine
-       (Low / Medium / High Risk)"]
-
-F --> G[Automated Credit Risk Report]
-G --> H[Decision Support for Analysts]
-
-```
 
 ## 7.2 Prediction Workflow
 
