@@ -3442,7 +3442,19 @@ Higher thresholds substantially increased Precision while sacrificing Recall.
 
 Intermediate thresholds offered more balanced performance, producing higher F1 Scores.
 
-Rather than selecting the threshold solely based on mathematical criteria, the final decision should consider the operational objectives of the lending institution.
+Rather than selecting the threshold solely based on mathematical criteria, the final decision should consider the operational objectives of the lending institution. See the table below and **Figure 1**:
+
+| Threshold | Precision | Recall | F1 | Business Interpretation |
+|-----------|-----------|--------|----|-------------------------|
+| 0.20 | 0.13 | 0.97 | 0.23 | Detect almost every risky applicant, but with many false positives. |
+| 0.50 | 0.22 | 0.70 | 0.33 | Balanced strategy and standard decision threshold. |
+| 0.60 | 0.27 | 0.55 | 0.36 | Best F1 Score, balanced compromise between Precision and Recall. |
+| 0.90 | 0.64 | 0.01 | 0.03 | Very few applicants classified as risky; most defaults remain undetected. |
+
+<p align="center">
+    <b>Figure 1. Effect of decision Threshold.</b><br><br>
+    <img src="../images/Effect_of_decision_threshold.png" alt="Different Thresholds" width="700">
+</p>
 
 ---
 
@@ -3474,16 +3486,7 @@ Decision thresholds significantly influence the balance between Precision and Re
 
 This analysis reinforced one of the central principles of applied Machine Learning:
 
-**The best model is not necessarily the one with the highest metric, but the one whose decision strategy best aligns with the organization's business objectives.**. See the table below:
-
-| Threshold | Precision | Recall | F1 | Business Interpretation |
-|-----------|-----------|--------|----|-------------------------|
-| 0.20 | 0.13 | 0.97 | 0.23 | Detect almost every risky applicant, but with many false positives. |
-| 0.50 | 0.22 | 0.70 | 0.33 | Balanced strategy and standard decision threshold. |
-| 0.60 | 0.27 | 0.55 | 0.36 | Best F1 Score, balanced compromise between Precision and Recall. |
-| 0.90 | 0.64 | 0.01 | 0.03 | Very few applicants classified as risky; most defaults remain undetected. |
-
-**INSERT GRAPH OF THRESHOLD OPTIMZATION**
+**The best model is not necessarily the one with the highest metric, but the one whose decision strategy best aligns with the organization's business objectives.**
 
 ## 6.5 Receiver Operating Characteristic (ROC) Curve
 
