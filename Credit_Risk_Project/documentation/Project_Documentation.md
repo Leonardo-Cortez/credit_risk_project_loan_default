@@ -3513,7 +3513,10 @@ The ROC Curve therefore illustrates how the classifier behaves under every possi
 
 **Figure 2**. Receiver Operating Characteristic (ROC) Curve for the Logistic Regression model. The model achieved an Area Under the Curve (ROC-AUC) of 0.753, indicating acceptable discrimination between default and non-default applicants.
 
-**INSERT FIGURE OF ROC-AUC**
+<p align="center">
+    <b>Figure 2. ROC-AUC Curve.</b><br><br>
+    <img src="../images/ROC_AUC_CURVE.png" alt="Different Thresholds" width="700">
+</p>
 ---
 
 ### Interpreting the ROC Curve
