@@ -72,7 +72,7 @@
   - [6.9.3 Business Comparison](#693-business-comparison)
   - [6.9.4 Final Model Selection](#694-final-model-selection)
 
-- [7. Credit Risk Prediction Framework](#7-credit-risk-prediction-framework)
+- [7. Credit Risk Prediction Framework](#chapter-7-credit-risk-prediction-framework)
   - [7.1 Framework Overview](#71-framework-overview)
   - [7.2 Prediction Workflow](#72-prediction-workflow)
   - [7.3 Credit Risk Report Generator](#73-credit-risk-report-generator)
@@ -5229,6 +5229,10 @@ Building an effective predictive solution requires integrating data preparation,
 The proposed Credit Risk Prediction Framework represents an important first step toward a practical analytical solution for lending environments.
 
 Future enhancements will continue transforming the framework into a more comprehensive and operational decision-support system capable of addressing increasingly complex credit risk management challenges.
+
+<p align="right">
+<a href="#table-of-contents">Back to Table of Contents</a>
+</p>
 
 # Chapter 8. Conclusions
 
