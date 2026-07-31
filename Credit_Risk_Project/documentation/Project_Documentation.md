@@ -3515,7 +3515,7 @@ The ROC Curve therefore illustrates how the classifier behaves under every possi
 
 <p align="center">
     <b>Figure 2. ROC-AUC Curve.</b><br><br>
-    <img src="../images/ROC_AUC_CURVE.png" alt="Different Thresholds" width="700">
+    <img src="../images/ROC_AUC_CURVE.png" alt="ROC-AUC Curve" width="700">
 </p>
 ---
 
@@ -3683,9 +3683,12 @@ Although this value is considerably lower than the ROC-AUC score, this behavior 
 
 The Precision-Recall evaluation represents a substantially more demanding assessment of predictive performance.
 
-**Figure X.** Precision-Recall Curve for the Logistic Regression model. The model achieved an Average Precision (AP) of 0.311, illustrating the increased difficulty of identifying the minority class in an imbalanced credit default dataset.
+**Figure 3.** Precision-Recall Curve for the Logistic Regression model. The model achieved an Average Precision (AP) of 0.311, illustrating the increased difficulty of identifying the minority class in an imbalanced credit default dataset.
 
-**INSERT FIGURE OF PR CURVE**
+<p align="center">
+    <b>Figure 3. Precision-Recall Curve.</b><br><br>
+    <img src="../images/PR_CURVE.png" alt="Precision-Recall Curve" width="700">
+</p>
 
 ---
 
