@@ -3831,9 +3831,12 @@ Together, they represent several of the strongest indicators of financial stabil
 
 ---
 
-**Figure X.** Logistic Regression feature coefficients ranked by magnitude. Positive coefficients increase the estimated probability of default, whereas negative coefficients reduce it.
+**Figure 4.** Logistic Regression feature coefficients ranked by magnitude. Positive coefficients increase the estimated probability of default, whereas negative coefficients reduce it.
 
-**INSERT FIGURE OF COEFFICIENTS**
+<p align="center">
+    <b>Figure 4. Positive-Negative Coefficients.</b><br><br>
+    <img src="../images/Positive_Negative_Coefficients.png" alt="Positive-Negative Coefficients" width="700">
+</p>
 
 ### Consistency with Exploratory Data Analysis
 
