@@ -4,7 +4,15 @@
 
 # Table of Contents
 
-- [1. Introduction](#1-introduction)
+- [1. Project Overview](#chapter-1--project-overview)
+  - [1.1 Project Information](#11-project-information)
+  - [1.2 Business Context](#12-business-context)
+  - [1.3 Business Problem](#13-business-problem)
+  - [1.4 Project Objective](#14-project-objective)
+  - [1.5 Dataset Overview](#15-dataset-overview)
+  - [1.6 Project Scope](#16-project-scope)
+  - [1.7 Final Deliverables](#17-final-deliverables)
+
 - [2. Business Understanding](#2-business-understanding)
   - [2.1 Business Context](#21-business-context)
   - [2.2 Business Problem](#22-business-problem)
@@ -213,6 +221,10 @@ The final solution consists of:
 * Professional GitHub repository.
 * Technical documentation.
 * Future Power BI dashboard.
+
+<p align="right">
+<a href="#table-of-contents">Back to Table of Contents</a>
+</p>
 
 # 2. Business Understanding
 
