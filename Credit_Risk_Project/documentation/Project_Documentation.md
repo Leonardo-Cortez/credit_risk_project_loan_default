@@ -24,12 +24,29 @@
   - [3.7 Initial Assumptions](#37-initial-assumptions)
   - [3.8 Dataset Limitations](#38-dataset-limitations)
 
-- [4. Exploratory Data Analysis](#4-exploratory-data-analysis)
-  - [4.1 Dataset Exploration](#41-dataset-exploration)
-  - [4.2 Univariate Analysis](#42-univariate-analysis)
-  - [4.3 Bivariate Analysis](#43-bivariate-analysis)
-  - [4.4 Correlation Analysis](#44-correlation-analysis)
-  - [4.5 Business Insights](#45-business-insights)
+- [4. Exploratory Data Analysis (EDA)](#4-exploratory-data-analysis-eda)
+  - [4.1 Purpose of the EDA](#41-purpose-of-the-exploratory-data-analysis)
+  - [4.2 Data Quality Assessment](#42-data-quality-assessment)
+  - [4.3 Target Variable Analysis](#43-target-variable-analysis)
+  - [4.4 Exploratory Analysis Strategy](#44-exploratory-analysis-strategy)
+  - [4.5 Analytical Methodology](#45-analytical-methodology)
+  - [4.6 Business-Driven Exploration](#46-business-driven-exploration)
+  - [4.7 Demographic Profile Analysis](#47-demographic-profile-analysis)
+  - [4.7.1 Variable Age](#471-age)
+  - [4.8 Financial Capacity Analysis](#48-financial-capacity-analysis)
+  - [4.8.1 Variable Income](#481-income)
+  - [4.8.2 Variable Loan Amount](#482-loanamount)
+  - [4.8.3 Variable Credit Score](#483-creditscore)
+  - [4.8.4 Variable Months Employed](#484-monthsemployed)
+  - [4.8.5 Variable Interest Rate](#485-interestrate)
+  - [4.8.6 Variable DTIRatio](#486-debt-to-income-ratio-dtiratio)
+  - [4.9 Categorical Variables Analysis](#49-categorical-variables-analysis)
+  - [4.9.1 Variable Education](#491-education)
+  - [4.9.2 Variable Employment Type](#492-employment-type)
+  - [4.9.3 Variable Marital Status](#493-marital-status)
+  - [4.9.4 Variable Loan Purpose](#494-loan-purpose)
+  - [4.9.5 Binary Variables](#495-binary-variables)
+  - [4.10 Overall Findings from the EDA](#410-overall-findings-from-the-exploratory-data-analysis)
 
 - [5. Data Preparation](#5-data-preparation)
   - [5.1 Data Cleaning](#51-data-cleaning)
@@ -2353,6 +2370,10 @@ The insights generated during this phase directly influenced:
 - Final decision-support recommendations.
 
 As a result, the subsequent Machine Learning pipeline was built upon validated evidence rather than assumptions, increasing both the technical robustness and business credibility of the final solution.
+
+<p align="right">
+<a href="#table-of-contents">Back to Table of Contents</a>
+</p>
 
 # Chapter 5. Data Preparation
 
