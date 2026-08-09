@@ -1,5 +1,5 @@
 import pandas as pd
-
+from validation import validate_client
 
 def predict_default_risk(client_data, pipeline, threshold=0.50):
     """
@@ -42,3 +42,35 @@ def predict_default_risk(client_data, pipeline, threshold=0.50):
         "prediction": prediction,
         "risk_level": risk_level,
     }
+
+
+def assess_credit_risk(client_data, pipeline, threshold=0.50):
+    """
+    Validate borrower information and assess credit risk.
+
+    Parameters
+    ----------
+    client_data : dict
+        Applicant information.
+
+    pipeline : sklearn.pipeline.Pipeline
+        Trained credit default prediction pipeline.
+
+    threshold : float, default=0.50
+        Probability threshold for predicted class.
+
+    Returns
+    -------
+    dict
+        Validated prediction results.
+    """
+
+    validated_client = validate_client(client_data)
+
+    result = predict_default_risk(
+        validated_client,
+        pipeline,
+        threshold=threshold
+    )
+
+    return result
