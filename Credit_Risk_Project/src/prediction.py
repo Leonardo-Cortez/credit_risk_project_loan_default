@@ -1,5 +1,5 @@
 import pandas as pd
-from validation import validate_client
+from src.validation import validate_client
 
 def predict_default_risk(client_data, pipeline, threshold=0.50):
     """
