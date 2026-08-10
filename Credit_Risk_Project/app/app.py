@@ -243,10 +243,10 @@ if st.button(
         "Education": education,
         "EmploymentType": employment_type,
         "MaritalStatus": marital_status,
-        "HasMortgage": has_mortgage,
-        "HasDependents": has_dependents,
+        "HasMortgage": 1 if has_mortgage == "Yes" else 0,
+        "HasDependents": 1 if has_dependents == "Yes" else 0,
         "LoanPurpose": loan_purpose,
-        "HasCoSigner": has_co_signer
+        "HasCoSigner": 1 if has_co_signer == "Yes" else 0
     }
 
     try:
