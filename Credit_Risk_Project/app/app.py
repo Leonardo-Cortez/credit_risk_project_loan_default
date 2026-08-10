@@ -251,37 +251,57 @@ if st.button(
 
     try:
 
-        result = assess_credit_risk(
-            applicant,
-            pipeline
+    result = assess_credit_risk(
+        applicant,
+        pipeline
+    )
+
+    probability = result["probability"]
+    prediction = result["prediction"]
+    risk_level = result["risk_level"]
+
+    report = generate_credit_report(
+        applicant,
+        pipeline
+    )
+
+    st.subheader("Credit Risk Assessment")
+
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.metric(
+            "Probability of Default",
+            f"{probability:.2%}"
         )
 
-        probability = result["probability"]
-        prediction = result["prediction"]
-        risk_level = result["risk_level"]
+    with col2:
+        st.metric(
+            "Predicted Class",
+            prediction
+        )
 
-        st.subheader("Credit Risk Assessment")
+    with col3:
+        st.metric(
+            "Risk Level",
+            risk_level
+        )
 
-        col1, col2, col3 = st.columns(3)
+    st.subheader("Main Risk Factors")
 
-        with col1:
-            st.metric(
-                "Probability of Default",
-                f"{probability:.2%}"
-            )
+    if report["risk_factors"]:
 
-        with col2:
-            st.metric(
-                "Predicted Class",
-                prediction
-            )
+        for factor in report["risk_factors"]:
+            st.write(factor)
 
-        with col3:
-            st.metric(
-                "Risk Level",
-                risk_level
-            )
+    else:
 
-    except ValueError as error:
+        st.success("No major risk factors detected.")
 
-        st.error(str(error))
+    st.subheader("Recommendation")
+
+    st.info(report["recommendation"])
+
+except ValueError as error:
+
+    st.error(str(error))
