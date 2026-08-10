@@ -5,7 +5,7 @@ from pathlib import Path
 
 # Add project root to Python path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-sys.path.append(str(PROJECT_ROOT))
+sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.prediction import assess_credit_risk
 from src.reporting import generate_credit_report
