@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 
 from src.prediction import assess_credit_risk
-
+from src.reporting import generate_credit_report
 
 # --------------------------------------------------
 # Page configuration
