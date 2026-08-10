@@ -89,7 +89,7 @@ with col3:
 # Employment & Financial Profile
 # --------------------------------------------------
 
-st.header("Employment & Financial Profile")
+st.header("Employment and Financial Profile")
 
 col1, col2, col3 = st.columns(3)
 
